@@ -2,10 +2,7 @@ import java.util.Collection;
 
 public class EmployeesManager {
 
-  /**
-   * Implement EmployeesManager to manage all employees of a company
-   *
-   */
+List<Employee> empList=new ArrayList<Employee>();
 
   /**
    * Adds an Employee
@@ -13,6 +10,16 @@ public class EmployeesManager {
    * @param employee
    * @return
    */
+  String addEmployee(Employee employee) {
+    // TODO - implement this
+    if(employee.getFirstName()!=null && employee.getBirthDate()!=null)
+    {
+        empList.add(employee);
+        return "Added successfully";
+    }
+	
+    return "Condition Invalid";
+  }
   String addEmployee(Employee employee) {
     // TODO - implement this
     return null;
